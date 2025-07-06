@@ -1,0 +1,11 @@
+tensorflow>=2.9
+keras
+numpy
+pandas
+matplotlib
+scikit-learn
+streamlit
+opencv-python
+pillow
+gdown
+tensorflow
