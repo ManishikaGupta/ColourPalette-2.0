@@ -1,31 +1,33 @@
 import streamlit as st
-import gdown
-import os
-import tensorflow as tf
 from tensorflow.keras.models import load_model
 from PIL import Image
 import numpy as np
+import os
+import requests
 
-# Load the trained model
+# Model download config
+MODEL_URL = "https://drive.google.com/uc?id=1X2bJ_TgEnT4K1VkWLW8c9H4MYmoAP9DM"
+MODEL_PATH = "undertone_model.h5"
+
 @st.cache_resource
-def load_model_from_drive():
-    file_id = "1X2bJ_TgEnT4K1VkWLW8c9H4MYmoAP9DM"  # ✅ Replace with your own file ID
-    url = f"https://drive.google.com/uc?id={file_id}"
-    output_path = "model.h5"
+def download_model():
+    if not os.path.exists(MODEL_PATH):
+        st.write("⬇️ Downloading model from Google Drive...")
+        with requests.get(MODEL_URL, stream=True) as r:
+            r.raise_for_status()
+            with open(MODEL_PATH, "wb") as f:
+                for chunk in r.iter_content(chunk_size=8192):
+                    f.write(chunk)
+        st.success("✅ Model downloaded successfully.")
+    return MODEL_PATH
 
-    if not os.path.exists(output_path):
-        gdown.download(url, output_path, quiet=False)
-
-    model = tf.keras.models.load_model(output_path)
-    return model
-
-model = load_model_from_drive()
-
+# Load model
+model_file = download_model()
+model = load_model(model_file)
 labels = ['cool', 'neutral', 'warm', 'olive']
 
 # Preprocessing function
 def preprocess(img):
-    img = img.convert("RGB")  # Ensures 3 channels (RGB)
     img = img.resize((224, 224))
     arr = np.array(img) / 255.0
     return np.expand_dims(arr, axis=0)
@@ -91,12 +93,16 @@ def display_color_blocks(palette_dict):
 # Streamlit UI
 st.title("🎨 Skin Undertone Predictor with Color Palette")
 
+# File uploader only
 uploaded = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
+img = None
 
 if uploaded:
     img = Image.open(uploaded)
+
+# Prediction
+if img:
     st.image(img, caption="Uploaded Image", use_container_width=True)
-    
     x = preprocess(img)
     preds = model.predict(x)[0]
     idx = np.argmax(preds)
