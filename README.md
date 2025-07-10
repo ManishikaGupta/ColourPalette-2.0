@@ -13,14 +13,14 @@ OLIVE UNDERTONE:
 
 ## 🎯 Project Overview
 This project implements a computer vision solution for skin undertone classification using advanced deep learning techniques. By leveraging transfer learning with MobileNetV2, we achieve high accuracy while maintaining computational efficiency.
-Key Features
+
+### Key Features
 Transfer Learning: Utilizes pre-trained MobileNetV2 for feature extraction
 Data Augmentation: Comprehensive augmentation pipeline to prevent overfitting
 Two-Stage Training: Initial training with frozen base model, followed by fine-tuning
 Balanced Classification: Handles four distinct undertone classes effectively
 
 ## 🏗️ Architecture
-Model Structure
 MobileNetV2 (Pre-trained, ImageNet weights)
     ↓
 GlobalAveragePooling2D
