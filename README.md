@@ -22,11 +22,11 @@ Balanced Classification: Handles four distinct undertone classes effectively
 
 ## 🏗️ Architecture
 MobileNetV2 (Pre-trained, ImageNet weights)
-    ↓
+    ->
 GlobalAveragePooling2D
-    ↓
+    ->
 Dropout(0.5)
-    ↓
+    ->
 Dense(128, activation='relu')
-    ↓
+    ->
 Dense(4, activation='softmax')
