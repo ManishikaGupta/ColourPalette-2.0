@@ -37,6 +37,6 @@ Dense(4, activation='softmax')
 
 ## Training Strategy
 
-Stage 1 - Feature Extraction: Train only the classifier head with frozen MobileNetV2 
+Stage 1 - Feature Extraction: Train only the classifier head with frozen MobileNetV2 .
 
-Stage 2 - Fine-tuning: Unfreeze base model and train end-to-end with lower learning rate
+Stage 2 - Fine-tuning: Unfreeze base model and train end-to-end with lower learning rate .
