@@ -1,4 +1,5 @@
 # ColourPalette-2.0
+[![Tech Stacks](https://img.shields.io/badge/TechStack-TensorFlow|Keras|Python|MobileNetV2|scikit_learn|Matplotlib|NumPy-bluevio
 Deployed Link:
 
 https://huggingface.co/spaces/manishika/skin-undertone
