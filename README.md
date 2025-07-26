@@ -26,19 +26,11 @@ Data Augmentation: Comprehensive augmentation pipeline to prevent overfitting
 Two-Stage Training: Initial training with frozen base model, followed by fine-tuning
 Balanced Classification: Handles four distinct undertone classes effectively
 
-## 🏗️ Architecture
-MobileNetV2 (Pre-trained, ImageNet weights)
-    ->
-GlobalAveragePooling2D
-    ->
-Dropout(0.5)
-    ->
-Dense(128, activation='relu')
-    ->
-Dense(4, activation='softmax')
+## 🏗️ Model Architecture & Performance
+Base Model: MobileNetV2 (pre-trained on ImageNet)
 
-## Training Strategy
+Fine-Tuning: Custom classification head; final layers unfrozen with a low learning rate
 
-Stage 1 - Feature Extraction: Train only the classifier head with frozen MobileNetV2 .
+Evaluation Dataset: 1,489 images
 
-Stage 2 - Fine-tuning: Unfreeze base model and train end-to-end with lower learning rate .
+Accuracy: 87%
