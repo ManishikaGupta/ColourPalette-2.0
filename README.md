@@ -1,6 +1,19 @@
 # ColourPalette-2.0
-[![Tech Stacks](https://img.shields.io/badge/TechStack-TensorFlow|Keras|Python|MobileNetV2|scikit_learn|Matplotlib|NumPy-bluevio
-Deployed Link:
+
+[![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)](https://www.python.org/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange?logo=tensorflow)](https://www.tensorflow.org/)
+[![Keras](https://img.shields.io/badge/Keras-API-red?logo=keras)](https://keras.io/)
+[![MobileNetV2](https://img.shields.io/badge/MobileNetV2-TransferLearning-green)](#)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-ff4b4b?logo=streamlit)](https://streamlit.io/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-ModelEval-blueviolet?logo=scikitlearn)](https://scikit-learn.org/)
+[![NumPy](https://img.shields.io/badge/NumPy-Array%20Ops-purple?logo=numpy)](https://numpy.org/)
+[![Pillow](https://img.shields.io/badge/Pillow-Image%20Handling-yellowgreen)](https://python-pillow.org/)
+
+### DEMO VIDEO
+
+https://github.com/user-attachments/assets/96866718-6f47-4473-a6c2-cf364ce385fc
+
+### Deployed Link:
 
 https://huggingface.co/spaces/manishika/skin-undertone
 
