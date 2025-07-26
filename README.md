@@ -5,6 +5,7 @@
 [![Keras](https://img.shields.io/badge/Keras-API-red?logo=keras)](https://keras.io/)
 [![MobileNetV2](https://img.shields.io/badge/MobileNetV2-TransferLearning-green)](#)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-ff4b4b?logo=streamlit)](https://streamlit.io/)
+[![Hugging Face Spaces](https://img.shields.io/badge/View%20on-Hugging%20Face-yellow?logo=huggingface)](https://huggingface.co/spaces/your-username/your-app-name)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-ModelEval-blueviolet?logo=scikitlearn)](https://scikit-learn.org/)
 [![NumPy](https://img.shields.io/badge/NumPy-Array%20Ops-purple?logo=numpy)](https://numpy.org/)
 [![Pillow](https://img.shields.io/badge/Pillow-Image%20Handling-yellowgreen)](https://python-pillow.org/)
