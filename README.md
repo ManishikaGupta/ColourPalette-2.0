@@ -18,20 +18,38 @@ https://github.com/user-attachments/assets/96866718-6f47-4473-a6c2-cf364ce385fc
 
 https://huggingface.co/spaces/manishika/skin-undertone
 
-## 🎯 Project Overview
-This project implements a computer vision solution for skin undertone classification using advanced deep learning techniques. By leveraging transfer learning with MobileNetV2, we achieve high accuracy while maintaining computational efficiency.
+### 🎯 Project Overview
 
-### Key Features
-Transfer Learning: Utilizes pre-trained MobileNetV2 for feature extraction
-Data Augmentation: Comprehensive augmentation pipeline to prevent overfitting
-Two-Stage Training: Initial training with frozen base model, followed by fine-tuning
-Balanced Classification: Handles four distinct undertone classes effectively
+This project implements a computer vision solution for skin undertone classification using advanced deep learning techniques. By leveraging transfer learning with **MobileNetV2**, we achieve high accuracy while maintaining computational efficiency.
+
+---
+
+### 🗝️ Key Features
+
+* **Transfer Learning**: Utilizes pre-trained MobileNetV2 for feature extraction
+* **Data Augmentation**: Comprehensive augmentation pipeline to prevent overfitting
+* **Two-Stage Training**: Initial training with frozen base model, followed by fine-tuning
+* **Balanced Classification**: Handles four distinct undertone classes effectively
+
+---
+
+### 📂 Dataset
+
+* **Organization**: Folder structure with images in four subfolders: `cool`, `neutral`, `warm`, `olive`
+* **Scale**: \~1,500 total images
+* **Split**: 80% training, 20% validation/testing (using `validation_split` in `ImageDataGenerator`)
+* **Labels**: Manually determined skin undertone categories
+
+---
 
 ## 🏗️ Model Architecture & Performance
-Base Model: MobileNetV2 (pre-trained on ImageNet)
 
-Fine-Tuning: Custom classification head; final layers unfrozen with a low learning rate
+* **Base Model**: MobileNetV2 (pre-trained on ImageNet)
+* **Fine-Tuning**: Custom classification head; final layers unfrozen with a low learning rate
+* **Evaluation Dataset**: 1,489 images
+* **Accuracy**: 87%
 
-Evaluation Dataset: 1,489 images
+---
 
-Accuracy: 87%
+
+
