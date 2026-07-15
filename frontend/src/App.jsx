@@ -11,7 +11,7 @@ import {
 import './App.css';
 
 // Change this to your deployed Render backend URL after deploying it!
-const RENDER_BACKEND_URL = "https://your-backend-app.onrender.com";
+const RENDER_BACKEND_URL = "https://skin-undertone-backend.onrender.com";
 
 // Auto-detect backend URL based on host (falls back to local API port 8000 during dev, or RENDER_BACKEND_URL in prod)
 const BACKEND_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
