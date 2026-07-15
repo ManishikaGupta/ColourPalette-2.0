@@ -10,13 +10,9 @@
 [![NumPy](https://img.shields.io/badge/NumPy-Array%20Ops-purple?logo=numpy)](https://numpy.org/)
 [![Pillow](https://img.shields.io/badge/Pillow-Image%20Handling-yellowgreen)](https://python-pillow.org/)
 
-### DEMO VIDEO
-
-https://github.com/user-attachments/assets/96866718-6f47-4473-a6c2-cf364ce385fc
-
 ### Deployed Link:
 
-
+https://colour-palette-2-0.vercel.app/
 
 ### 🎯 Project Overview
 
